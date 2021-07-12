@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .body {
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 2%
+        }
+
+        .menu {
+            color: rgba(184, 190, 205, 1);
+            padding: 10px;
+            font-weight: normal;
+        }
+
+        .butt {
+            Width: 90px;
+            Height: 35px;
+            border-radius: 5px;
+            color: #F2994A;
+            background-color: #FFF;
+            border: 1px solid #F2994A;
+        }
+
+        .klik_2,
+        .klik_3,
+        .klik_4 {
+            background-color: #F2994A;
+            color: #FFFFFF
+        }
+
+        .Head {
+            display: flex;
+            margin-left: auto;
+            justify-content: flex-end;
+
+        }
+
+        .push {
+            margin-left: auto;
+        }
+
+        .select {
+            grid-column: 1/2;
+            grid-row: 2/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        .select_1 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .select_2 {
+            grid-column: 2/3;
+            grid-row: 1/2;
+        }
+
+        .select_3 {
+            grid-column: 1/2;
+            grid-row: 2/3;
+        }
+
+        .select_4 {
+            grid-column: 2/3;
+            grid-row: 2/3;
+        }
+
+        .sel {
+            width: 70%;
+            height: 20%;
+        }
+
+        .pict {
+            grid-column: 2/3;
+            grid-row: 1/3;
+        }
+
+        .mai {
+            display: grid;
+            grid-template-columns: 1/3;
+            grid-template-rows: 1/3;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            align-items: center;
+        }
+
+        .name {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        .info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            border: springgreen solid 1px;
+        }
+
+        .pict2 {
+            grid-column: 1/2;
+            grid-row: 1/2;
+        }
+
+        .text {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            border: darkviolet solid 1px;
+            vertical-align: middle;
+        }
+
+
+
+        @media screen and (max-width: 399px) {
+            .pict {
+                display: none;
+            }
+
+            .pict2 {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 399px) {
+            .mai {
+                display: grid;
+                grid-column: 1/4;
+                grid-row: 1/3;
+            }
+
+            .text {
+                display: grid;
+                grid-column: 1/3;
+                grid-row: 1/3;
+            }
+        }
+    </style>
+</head>
+
+<body class="body">
+    <heade>
+        <div class="Head">
+            <img src="logo.png" alt="Логотип">
+            <div class="push">
+                <a class="menu" href="">Home</a>
+                <a class="menu" href="">Destination</a>
+                <a class="menu" href="">Abaut</a>
+                <a class="menu" href="">Partner</a>
+                <button class="butt klik_1">Login</button>
+                <button class="butt klik_2">Register</button></div>
+        </div>
+    </heade>
+
+    <main>
+        <div class="mai">
+            <div class="name">
+                <h1>Explore and
+                    Travel</h1>
+                <h3>Holiday finder</h3>
+            </div>
+
+            <div class="select">
+                <select class="sel select_1 ">
+                    <option>Location</option>
+                </select>
+                <select class="sel select_2">
+                    <option>Activity</option>
+                </select>
+                <select class="sel select_3">
+                    <option>Grede</option>
+                </select>
+                <select class="sel select_4">
+                    <option>Date</option>
+                </select>
+            </div>
+            <button class="butt klik_3">Explore</button>
+
+            <div class="pict">
+                <img src="thousand.svg" alt="Путешественник">
+            </div>
+        </div>
+    </main>
+
+    <div class="info">
+        <div class="pict2">
+            <img src="Thousand_2.svg">
+        </div>
+        <div class="text">
+            <h1>
+                A new way to explore the world
+            </h1>
+            <h4>
+                For decades travellers have reached for Lonely Planet books when looking to plan and execute their
+                perfect
+                trip, but now, they can also let Lonely Planet Experiences lead the way
+            </h4>
+
+            <button class="butt klik_4">Learn more</button>
+
+        </div>
+    </div>
+
+
+</body>
+
+</html>
